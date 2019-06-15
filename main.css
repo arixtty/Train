@@ -84,6 +84,8 @@ body {
 }
 
 .heading-primary {
+  	animation: moveDown .8s ease-out .2s backwards;
+	backface-visibility: hidden;
 	font-size: 3.6rem;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -91,14 +93,32 @@ body {
 	margin-bottom: 8rem;
 }
 
-.btn {
+.btn:link,
+.btn:visited {
 	font-size: 1.8rem;
 	font-weight: 300;
 	color: white;
 	text-decoration: none;
 	padding: 1rem 5rem;
 	border: 2px solid white;
-	
+	display: inline-block;
+	box-shadow: 0 3px 3px rgba(0,0,0,.2);
+	transition: all .1s ease-out;
+	backface-visibility: hidden;
+}
+
+.btn:hover {
+	transform: translateY(-.2rem);
+	box-shadow: 0 8px 8px rgba(0,0,0,.2);
+}
+
+.btn:active {
+	transform: translateY(-.1rem);
+	box-shadow: 0 5px 5px rgba(0,0,0,.2);
+}
+
+.btn-animated {
+	animation: moveUp .8s ease-out .8s backwards;
 }
 
 .features {
@@ -490,3 +510,24 @@ body {
 	width: calc(3 * ((100% - 3 * 3rem) / 4) + 2 * 3rem); 
 }
 
+@keyframes moveDown {
+	0% {
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	100% {
+		opacity: 100;
+		transform: translateY(0px);
+	}
+}
+
+@keyframes moveUp {
+	0% {
+		opacity: 0;
+		transform: translateY(2rem);
+	}
+	100% {
+		opacity: 100;
+		transform: translateY(0);
+	}
+}
