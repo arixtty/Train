@@ -85,7 +85,7 @@ body {
 }
 
 .heading-primary {
-  	animation: moveDown .8s ease-out .2s backwards;
+  	animation: moveDown 1s ease 1s backwards;
 	backface-visibility: hidden;
 	font-size: 3.6rem;
 	font-weight: 400;
@@ -119,7 +119,7 @@ body {
 }
 
 .btn-animated {
-	animation: moveUp .8s ease-out .8s backwards;
+	animation: moveUp .8s ease-out 1.8s backwards;
 }
 
 .features {
