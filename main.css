@@ -72,7 +72,8 @@ body {
 	background-repeat: no-repeat;
 	width: 100%;
 	height: 80vh;
-	display: relative;
+	z-index: 2;
+	position: relative;
 }
 
 .main__text-box {
@@ -127,7 +128,11 @@ body {
 	margin-top: -20rem;
 	padding-top: 30rem;
 	position: relative;
-	z-index: -1;
+	z-index: 1;
+}
+
+.features__icon {
+	margin-bottom: 2rem;
 }
 
 .heading-secondary {
