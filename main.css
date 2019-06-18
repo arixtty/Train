@@ -388,29 +388,31 @@ body {
 	font-weight: 300;
 	padding-bottom: 5rem;
 }
-/*
+
 .contact__social-media-buttons {
 	text-align: center;
-	font-size: 4rem;
+	font-size: 3.5rem;
 }
 
-.solial-media__link {
-    text-decoration: none;
+.contact__social-media-buttons li {
+	display: inline-block;
 }
 
-.fab:not(:last-child) {
+.contact__social-media-buttons li:not(:last-child) {
 	margin-right: 2rem;
 }
 
-.fab:hover {
-    opacity: 0.7;
+[class*="fa-"] {
+	color: white;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+
+.contact__social-media-buttons [class*="fa-"]:hover {
+    opacity: 0.5;
 }
 
+
+/*
 .fa-twitter {
     background: #55ACEE;
     color: white;
@@ -428,9 +430,13 @@ body {
 
 .fa-instagram {
     background: linear-gradient(to bottom, #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+background-clip: text
     color: white;
 }
 */
+
+
+
 
 .contact__twitter-feed--tweet .fab, .contact__twitter-feed--tweet .fa-twitter {
 	    font-size: 5rem;
