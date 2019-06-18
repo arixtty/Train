@@ -386,29 +386,23 @@ body {
 .contact__social-media h2 {
 	color: white;
 	font-weight: 300;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
 }
-
+/*
 .contact__social-media-buttons {
 	text-align: center;
+	font-size: 4rem;
 }
 
-.fa {
-	padding: 1rem;
-    font-size: 3rem;
-    width: 5rem;
-	height: 5rem;
-	border-radius: 50%;
-    text-align: center;
+.solial-media__link {
     text-decoration: none;
-	display: inline-block;
 }
 
-.fa:not(:last-child) {
+.fab:not(:last-child) {
 	margin-right: 2rem;
 }
 
-.fa:hover {
+.fab:hover {
     opacity: 0.7;
 }
 
@@ -436,8 +430,9 @@ body {
     background: linear-gradient(to bottom, #feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
     color: white;
 }
+*/
 
-.contact__twitter-feed--tweet .fa, .contact__twitter-feed--tweet .fa-twitter {
+.contact__twitter-feed--tweet .fab, .contact__twitter-feed--tweet .fa-twitter {
 	    font-size: 5rem;
 	    text-align: center;
 	    text-decoration: none;
