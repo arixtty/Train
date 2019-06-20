@@ -158,13 +158,56 @@ body {
 }
 
 .features__box {
-	height: 40rem;
-	padding: 5rem;
+	min-height: 30rem;
+	position: relative;
+	perspective: 150rem;
+	margin: 10rem auto;
+	width: 70%;
+}
+
+.card__side {
+	border-radius: 1rem;
+	transition: all .3s ease-out;
+	min-height: 30rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	box-shadow: 0 1rem 2rem rgba(0,0,0, .4);
+	padding: 3rem 1rem;
 	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 1.6;
 	color: white;
 	text-align: center;
+}
+
+.card__side-front {
+	background: #34B5DB;
+}
+
+.card__side-back--1 {
+	background: #164C5E;
+}
+
+.card__side-back--2 {
+	background: #85E8FE;
+}
+
+.card__side-back--3 {
+	background: #1C65FE;
+}
+
+.card__side-back {
+	transform: rotateY(-180deg);
+}
+
+.features__box:hover .card__side-front {
+	transform: rotateY(180deg);
+}
+
+.features__box:hover .card__side-back {
+	transform: rotateY(0deg);
 }
 
 .section-gradient {
