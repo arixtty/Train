@@ -51,7 +51,6 @@ body {
 	display: inline-block;
 	width: calc(100% - 37rem);
 	text-align: right;
-
 	vertical-align: middle;
 }
 
@@ -59,6 +58,19 @@ body {
 .header__nav-item {
 	display: inline-block;
 	font-size: 1.4rem;
+}
+
+.header__nav-link:link,
+.header__nav-link:visited {
+	text-decoration: none;
+	color: inherit;
+	transition: color .2s;
+}
+
+.header__nav-link:hover,
+.header__nav-link:active {
+	text-decoration: none;
+	color: #34B5DB;
 }
 
 .header__nav-item:not(:last-child) {
