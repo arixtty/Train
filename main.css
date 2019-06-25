@@ -27,7 +27,6 @@ body {
 	visibility: hidden;
 	z-index: 2000;
 	transition: all .2s;
-	color: gray;
 }
 
 .popup:target {
@@ -89,7 +88,12 @@ body {
 	height: 4.2rem;
 	margin: 1rem 0 1rem 9rem;
 	display: inline-block;
+}
 
+.header__logo-box--link:link,
+.header__logo-box--link:visited {
+	text-decoration: none;
+	color: inherit;
 }
 
 .header__logo {
