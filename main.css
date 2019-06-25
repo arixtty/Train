@@ -17,6 +17,66 @@ body {
 
 }
 
+.popup {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0);
+	visibility: hidden;
+	z-index: 2000;
+	transition: all .2s;
+	color: gray;
+}
+
+.popup:target {
+	background: rgba(0,0,0,.8);
+	visibility: visible;
+}
+
+.popup__content {
+	min-width: 35%;
+	min-height: 40vh;
+	background: white;
+	border-radius: 5px;
+	padding: 2.5rem;
+	z-index: 3000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(.5);
+	transition: all .2s;
+	opacity: 0;
+}
+
+.pop__content-text {
+	font-size: 1.4rem;
+	margin-top: 3rem;
+	color: #34B5DB;
+}
+
+.popup__close:link,
+.popup__close:visited {
+	font-size: 3rem;
+	font-weight: 600;
+	color: black;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	right: 1.5rem;
+}
+
+.popup__close:active,
+.popup__close:hover {
+	color: #34B5DB;
+}
+
+.popup:target .popup__content {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(1);
+}
+
 .header {
 	width: 100%;
 	background-color: #141619;
@@ -137,10 +197,10 @@ body {
 .features {
 	background: #34B5DB;
 	color: white;	
-	margin-top: -20rem;
-	padding-top: 30rem;
 	position: relative;
 	z-index: 1;
+	margin-top: -20rem;
+	padding-top: 30rem;
 }
 
 .features__icon {

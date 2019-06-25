@@ -15,6 +15,13 @@ Photo by Nicolas Prieto on Unsplash
 	<script src="https://kit.fontawesome.com/29c025f179.js"></script>
 </head>
 <body>
+	<div class="popup" id="popup">
+		<div class="popup__content">
+			<h2 class="heading-secondary">Disclaimer</h2>
+			<p class="pop__content-text">This is a demo site coded with pure CSS. It was created to showcase the author's skills (flex and grid excluded). The links lead nowhere. Pressing the closing button will take you to the top of the page</p>
+			<a href="#home" class="popup__close">&times;</a> 
+		</div>
+	</div>
 	<header class="header">
 		<div class="header__logo-box">
 			<img src="img/logo.png" class="header__logo"/>
@@ -22,24 +29,24 @@ Photo by Nicolas Prieto on Unsplash
 		</div>
 		<nav class="header__nav">
 			<ul class="header__nav-list">
-				<li class="header__nav-item"><a href="#" class="header__nav-link">Home</a></li>
-				<li class="header__nav-item"><a href="#" class="header__nav-link">Gallery</a></li>
-				<li class="header__nav-item" href="#"><a class="header__nav-link" href="#">About</a></li>
-				<li class="header__nav-item"><a class="header__nav-link" href="#">Contact</a></li>
+				<li class="header__nav-item"><a href="#home" class="header__nav-link">Home</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#about">About</a></li>
+				<li class="header__nav-item"><a href="#gallery" class="header__nav-link">Gallery</a></li>
+				<li class="header__nav-item"><a class="header__nav-link" href="#contact">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	
 	<main>
 		
-		<section class="main__jumbotron">
+		<section class="main__jumbotron" id="home">
 			<div class="main__text-box">
 				<h1 class="heading-primary">We create design that you will love</h1>	
-				<a href="#" class="btn btn-animated">Read more</a>
+				<a href="#popup" class="btn btn-animated">Read more</a>
 			</div>
 		</section>
 		
-		<section class="features">
+		<section class="features" id="about">
 			<h2 class="heading-secondary"><span class="heading-secondary--main">Our features</span> <span class="heading-secondary--sub">Lorem ipsum dolor sit amet.</span></h2>
 			<div class="row">
 				<div class="col-1-of-3">
@@ -80,13 +87,13 @@ Photo by Nicolas Prieto on Unsplash
 			</div>
 		</section>
 		<div class="section-gradient">&nbsp;</div>
-		<section class="portfolio">
+		<section class="portfolio" id="gallery">
 			<h2 class="heading-secondary"><span class="heading-secondary--main">Selection of our work</span> <span class="heading-secondary--sub">Lorem ipsum dolor sit amet.</span></h2>
 
 			<div class="row portfolio__composition">
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works1.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works1.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -96,7 +103,7 @@ Photo by Nicolas Prieto on Unsplash
 				</div>
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works2.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works2.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -106,7 +113,7 @@ Photo by Nicolas Prieto on Unsplash
 				</div>
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works3.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works3.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -120,7 +127,7 @@ Photo by Nicolas Prieto on Unsplash
 			<div class="row portfolio__composition">
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works4.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works4.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -130,7 +137,7 @@ Photo by Nicolas Prieto on Unsplash
 				</div>
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works5.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works5.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -140,7 +147,7 @@ Photo by Nicolas Prieto on Unsplash
 				</div>
 				<div class="col-1-of-3"> 
 					<div class="portfolio__box">
-						<a href="#"><img src="img/works6.jpg" class="portfolio__box-image" alt="">
+						<a href="#gallery"><img src="img/works6.jpg" class="portfolio__box-image" alt="">
 							<div class="portfolio__box-band">
 								<div class="portfolio__box-arrow">&rarr;
 								</div>
@@ -161,7 +168,7 @@ Photo by Nicolas Prieto on Unsplash
 			<div class="testimonials-decoration">&nbsp;</div>
 		</section>
 		
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="contact__form">
 				<div class="contact__form-cta">Subscribe to our newsletter</div>
 				<input type="email" placeholder="Email address" class="contact__form-email">
