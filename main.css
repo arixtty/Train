@@ -348,6 +348,10 @@ body {
 	padding: 5rem 0;
 }
 
+.testimonials-message {
+	animation: accented 2s 1s ease-out 60 alternate forwards running;
+}
+
 .testimonials-text {
 	width: 50%;
 	margin: 5rem auto auto;
@@ -405,15 +409,6 @@ body {
 	animation: moveLeft 1s ease .6s backwards;
 }
 
-/*
-.testimonials-text__quote-mark {
-	display: inline-block;
-	font-size: 10rem;
-	color: #868486;
-	font-family: sans-serif;
-	font-weight: 400;
-}
-*/
 
 .contact {
 	position: relative;
@@ -698,5 +693,15 @@ background-clip: text
 	100% {
 		opacity: 100;
 		transform: translateY(0px);
+	}
+}
+
+@keyframes accented {
+	0% {
+		color: black;
+	}
+	
+	100% {
+		color: #34B5DB;
 	}
 }
