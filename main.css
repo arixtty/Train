@@ -208,7 +208,7 @@ body {
 .heading-primary {
   	animation: moveDown 1s ease 1s backwards;
 	backface-visibility: hidden;
-	font-size: 5rem;
+	font-size: 3.6rem;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: white;
@@ -351,21 +351,20 @@ body {
 	overflow: hidden;
 	opacity: .8;
 	border-radius: 3px;
-	transition: all .4s;
+	transition: all .3s;
 }
 
-.portfolio__composition {
-	transition: .4s;
+@media only screen and (max-width: 768px) {
+	.portfolio__box {
+		opacity: 1;
+	}
 }
 
 .portfolio__box:hover {
 	opacity: 1;
-	transform: scale(1.05);
+	transform: scale(1.02);
 }
 
-.portfolio__composition:hover .portfolio__box:not(:hover) {
-	transform: scale(.95);
-}
 
 .portfolio__box-image {
 	width: 100%;
@@ -661,13 +660,17 @@ background-clip: text
 
 @media only screen and (max-width: 768px) {
 	.row {
-		max-width: 50rem;
+		max-width: 80rem; 
+	}
+	.row:not(:last-child) {
+		margin-bottom: 0; 
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.row [class^="col-"] {
 		width: 100% !important;
+		padding: 1rem 2rem;
 	}
 }
 
