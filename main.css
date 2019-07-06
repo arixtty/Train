@@ -272,6 +272,7 @@ body {
 	height: 2px;
 	background-color: white;
 	display: inline-block;
+	transition: all .1s ease-in;
 }
 
 .nav-button__icon {
@@ -295,11 +296,11 @@ body {
 }
 
 .header__nav-button:hover .nav-button__icon::before {
-	top: -1.5rem;
+	transform: translateY(-2px);
 }
 
 .header__nav-button:hover .nav-button__icon::after {
-	top: 1.5rem;
+	transform: translateY(2px);
 }
 
 }
@@ -701,7 +702,7 @@ body {
 	color: white;
 	font-size: 2.4rem;
 	text-align: center;
-	padding: 3rem 0;
+	padding: 3rem 1rem;
 	background: #141619;
 }
 
