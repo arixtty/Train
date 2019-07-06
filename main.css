@@ -218,20 +218,16 @@ body {
 .header__mobile-nav {
 	opacity: 0;
 	position: fixed;
-	z-index: 10;
-	top: 7.5rem;
 	right: 0;
+	top: 7.5rem;
 	background: #141619;
 	width: 100%;
 	height: 50vh;
 	-webkit-transform: translateY(-80rem);
 	    -ms-transform: translateY(-80rem);
 	        transform: translateY(-80rem);
-	-webkit-transition: -webkit-transform .3s ease-in;
-	transition: -webkit-transform .3s ease-in;
-	-o-transition: transform .3s ease-in;
-	transition: transform .3s ease-in;
-	transition: transform .3s ease-in, -webkit-transform .3s ease-in;
+	transition: all .3s;
+	z-index: 999;
 }
 
 .header__mobile-nav-list {

@@ -15,5 +15,12 @@ anyBody.addEventListener("click", function() {
   mobileNav.classList.remove("open");
 	setTimeout(function() {  
 		  mobileNav.classList.remove("open");
-		}, 8);
+		}, 5);
+});
+
+anyBody.addEventListener("touchstart", function() {
+  mobileNav.classList.remove("open");
+	setTimeout(function() {  
+		  mobileNav.classList.remove("open");
+		}, 5);
 });
