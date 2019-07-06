@@ -243,8 +243,8 @@ body {
 
 .header__mobile-nav-item {
 	display: block;
-	margin-bottom: 5rem;
-	font-size: 2.8rem;
+	margin: 5rem auto;
+	font-size: 2rem;
 	color: white;
 }
 
