@@ -716,6 +716,7 @@ body {
 @media only screen and (max-width: 768px) {
 	.contact__form-cta {
 		margin-bottom: 3rem;
+		padding: 1rem .5rem;
 	}
 }
 
@@ -724,7 +725,7 @@ body {
 	vertical-align: middle;
 	padding: 1rem;
 	height: 5rem;
-	width: 25rem;
+	width: 20rem;
 	background: #1F2124;
 	color: #343436;
 	border: none;
@@ -747,7 +748,7 @@ body {
 	vertical-align: middle;
 	padding: 1rem;
 	height: 5rem;
-	width: 10rem;
+	width: 8rem;
 	background: #F5910A;
 	color: white;
 	text-transform: uppercase;
